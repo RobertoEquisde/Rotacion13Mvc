@@ -1,0 +1,21 @@
+
+@using web2.Classes;
+<!--  crea un boton y un input donde se introduzca un string para pasarlo con rotacion13-->
+@{
+    string cadena ="Roberto";
+    string cadenaRot13="";
+    if (cadena == ""){
+        cadenaRot13 = "escribe algo en la caja de texto";
+    }
+    else{
+        cadenaRot13 = Utilerias.Rotacion13(cadena);
+    }
+}
+<h1>
+    rotacion13
+</h1>
+<h2 id="result">
+    texto original: @cadena <br/>
+     texto con rotacion13:@cadenaRot13
+</h2>
+
